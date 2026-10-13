@@ -1,4 +1,4 @@
-(function(){
+function aeconCommandCentreBoot(){
   'use strict';
   var root=document.getElementById('aecon-command-centre'); if(!root)return;
   var offerings=[
@@ -18,4 +18,12 @@
   function setFilter(f){currentFilter=f;root.querySelectorAll('[data-filter]').forEach(function(b){b.classList.toggle('is-active',b.dataset.filter===f)});render();document.querySelector('.acc-offerings-section').scrollIntoView({behavior:'smooth',block:'start'})}
   root.addEventListener('click',function(e){var action=e.target.closest('[data-action]')&&e.target.closest('[data-action]').dataset.action;if(action==='close-drawer')closeDrawer();if(action==='focus-risk')openDrawer('OFF-2026-014');if(action==='open-review'||action==='open-kanban')showToast('Demo view: this control is ready for the next Dataverse-backed page.');if(action==='open-help')showToast('Readiness summarizes evidence; a named reviewer makes the decision.');if(action==='refresh')showToast('Demo refreshed just now.');var filter=e.target.closest('[data-filter]');if(filter)setFilter(filter.dataset.filter);var view=e.target.closest('[data-view]');if(view){listView=view.dataset.view==='list';root.querySelectorAll('[data-view]').forEach(function(b){b.classList.toggle('is-active',b===view)});render()}});
   search.addEventListener('input',render);render();
-})();
+}
+
+// Power Pages can load custom JavaScript before the editable page markup.
+// Wait for the DOM so the buttons, filters, drawer, and search are always wired.
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',aeconCommandCentreBoot);
+}else{
+  aeconCommandCentreBoot();
+}

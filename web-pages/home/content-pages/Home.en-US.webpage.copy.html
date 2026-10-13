@@ -1,245 +1,34 @@
-<style>
-.sec-1 { background: #0a1f44 !important; }
-.sec-2 { background: #ff6600 !important; }
-.sec-3 { background: #004080 !important; }
-.sec-4 { background: #008000 !important; }
-.sec-5 { background: #ffbf00 !important; }
-.sec-6 { background: #cc3300 !important; }
-.sec-7 { background: #006699 !important; }
-:root { --brand: #003366; --brand-2: #ff6600; --accent: #ffbf00; --brand-shadow: rgba(255,102,0,0.6); }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-* { font-family: 'Inter', sans-serif; }
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-.anim-up { animation: fadeInUp 0.6s ease both; }
-.anim-fade { animation: fadeIn 0.8s ease both; }
-.btn-grad { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.btn-grad:hover { transform: translateY(-2px); box-shadow: 0 12px 28px var(--brand-shadow); }
-.card-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; box-shadow: 0 8px 28px rgba(0,0,0,0.28), 0 2px 8px rgba(0,0,0,0.12); }
-.card-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgba(0,0,0,0.38), 0 4px 12px rgba(0,0,0,0.14); }
-</style>
-
-<div class="row sectionBlockLayout sec-1" data-component-theme="portalThemeColor8"
- style="display: flex; flex-wrap: wrap; min-height: 520px;
- background-image: url('https://cdn.hubblecontent.osi.office.net/m365content/publish/988d3a70-e3d4-49aa-9eb0-ce04c8551771/thumbnails/xxlarge.jpg') !important;
- background-size: cover; background-position: center;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column;
- justify-content: center; align-items: center; text-align: center;
- padding: 80px 48px;
- background: linear-gradient(rgba(10,15,40,0.7), rgba(10,15,40,0.85));">
- <span style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ffbf00; font-weight: 600; display: block; margin-bottom: 16px;">Aecon Command Centre</span>
- <h1 class="anim-up" style="font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: #fff; margin-bottom: 20px;">University1 Delivery Readiness</h1>
- <p class="anim-up" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 580px; line-height: 1.7; margin-bottom: 36px;">Monitoring and managing project delivery readiness with real-time status updates and actionable insights.</p>
- <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
- <button class="button1 btn-grad" style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; border: none; border-radius: 999px; padding: 14px 36px; font-weight: 700; font-size: 1rem; cursor: pointer;">View Dashboard</button>
- <button class="button1" style="background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.6); border-radius: 999px; padding: 12px 32px; font-weight: 600; cursor: pointer;">Learn More</button>
- </div>
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-2" data-component-theme="portalThemeColor2"
- style="display: flex; flex-wrap: wrap; min-height: auto;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
- <div style="text-align: center; margin-bottom: 48px;">
- <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Core Features</span>
- <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">Command Centre Capabilities</h2>
- <p style="color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto; line-height: 1.7;">Centralized tools to track project readiness, resource allocation, and risk management across university sites.</p>
- </div>
- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
- <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">📊</div>
- <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Real-Time Status</h3>
- <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Live updates on delivery readiness with green, amber, and red indicators for quick assessment.</p>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
- <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">🛠️</div>
- <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Resource Management</h3>
- <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Optimize allocation of teams and equipment to ensure timely project milestones.</p>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
- <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">⚠️</div>
- <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Risk Alerts</h3>
- <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Automated notifications for potential delays or issues flagged by project teams.</p>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
- <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">📅</div>
- <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Milestone Tracking</h3>
- <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Visual timelines to monitor key delivery dates and readiness checkpoints.</p>
- </div>
- </div>
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-3" data-component-theme="portalThemeColor8"
- style="display: flex; flex-wrap: wrap; min-height: auto;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 32px; text-align: center;">
- <div>
- <div style="font-size: 3rem; font-weight: 800; color: #00cc44; line-height: 1;">24</div>
- <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Active Projects</p>
- </div>
- <div>
- <div style="font-size: 3rem; font-weight: 800; color: #ffbf00; line-height: 1;">8</div>
- <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Projects at Risk</p>
- </div>
- <div>
- <div style="font-size: 3rem; font-weight: 800; color: #cc3300; line-height: 1;">5</div>
- <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Delayed Deliveries</p>
- </div>
- <div>
- <div style="font-size: 3rem; font-weight: 800; color: #ff6600; line-height: 1;">98%</div>
- <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">On-Time Readiness</p>
- </div>
- </div>
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-4" data-component-theme="portalThemeColor3"
- style="display: flex; flex-wrap: wrap; min-height: auto;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
- <div style="text-align: center; margin-bottom: 48px;">
- <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Testimonials</span>
- <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">What Our Project Leads Say</h2>
- <p style="color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto; line-height: 1.7;">Insights from those managing delivery readiness across Aecon University projects.</p>
- </div>
- <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
- <div class="card-lift" style="background: rgba(255,255,255,0.12); border-radius: 20px; padding: 32px; border: 1px solid rgba(255,255,255,0.2);">
- <div style="color: rgba(255,255,255,0.9); font-size: 2.2rem; line-height: 1; margin-bottom: 16px;">❝</div>
- <p style="color: rgba(255,255,255,0.88); line-height: 1.7; margin-bottom: 24px; font-style: italic; font-size: 0.97rem;">"The command centre's live status updates have transformed how we anticipate and resolve delivery challenges."</p>
- <div style="display: flex; align-items: center; gap: 12px;">
- <img style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/dab21ee1-829e-4f9c-9e1c-90270e37898b/thumbnails/xxlarge.jpg" alt="Sarah Thompson">
- <div>
- <div style="font-weight: 700; color: #fff; font-size: 0.9rem;">Sarah Thompson</div>
- <div style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">Senior Project Manager</div>
- </div>
- </div>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.12); border-radius: 20px; padding: 32px; border: 1px solid rgba(255,255,255,0.2);">
- <div style="color: rgba(255,255,255,0.9); font-size: 2.2rem; line-height: 1; margin-bottom: 16px;">❝</div>
- <p style="color: rgba(255,255,255,0.88); line-height: 1.7; margin-bottom: 24px; font-style: italic; font-size: 0.97rem;">"Having centralized resource tracking has improved our efficiency and reduced downtime significantly."</p>
- <div style="display: flex; align-items: center; gap: 12px;">
- <img style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/81057294-cc31-45b0-afc0-10c1ef859b50/thumbnails/xxlarge.jpg" alt="Michael Lee">
- <div>
- <div style="font-weight: 700; color: #fff; font-size: 0.9rem;">Michael Lee</div>
- <div style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">Resource Coordinator</div>
- </div>
- </div>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.12); border-radius: 20px; padding: 32px; border: 1px solid rgba(255,255,255,0.2);">
- <div style="color: rgba(255,255,255,0.9); font-size: 2.2rem; line-height: 1; margin-bottom: 16px;">❝</div>
- <p style="color: rgba(255,255,255,0.88); line-height: 1.7; margin-bottom: 24px; font-style: italic; font-size: 0.97rem;">"Risk alerts have allowed us to proactively address issues before they impact delivery timelines."</p>
- <div style="display: flex; align-items: center; gap: 12px;">
- <img style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/74e00fef-858e-4f81-a695-d150ed4c09a8/thumbnails/xxlarge.jpg" alt="Emily Carter">
- <div>
- <div style="font-weight: 700; color: #fff; font-size: 0.9rem;">Emily Carter</div>
- <div style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">Risk Analyst</div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-5" data-component-theme="portalThemeColor4"
- style="display: flex; flex-wrap: wrap; min-height: auto; clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-6 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
- <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Why Choose Aecon</span>
- <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 24px;">Delivering Excellence with Confidence</h2>
- <div style="display: flex; flex-direction: column; gap: 16px;">
- <div style="display: flex; gap: 14px; align-items: flex-start;">
- <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
- <div>
- <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Integrated Status Monitoring</div>
- <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Consolidate all delivery readiness data into one intuitive platform.</div>
- </div>
- </div>
- <div style="display: flex; gap: 14px; align-items: flex-start;">
- <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
- <div>
- <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Proactive Risk Management</div>
- <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Early warnings help mitigate delays and keep projects on track.</div>
- </div>
- </div>
- <div style="display: flex; gap: 14px; align-items: flex-start;">
- <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
- <div>
- <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">User-Friendly Interface</div>
- <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Accessible dashboards designed for quick decision-making by all stakeholders.</div>
- </div>
- </div>
- <div style="display: flex; gap: 14px; align-items: flex-start;">
- <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
- <div>
- <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Customizable Alerts</div>
- <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Tailor notifications to your project’s unique needs and priorities.</div>
- </div>
- </div>
- </div>
- </div>
- <div class="col-md-6 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
- <img style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 56px rgba(0,0,0,0.2);" class="anim-fade" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/360a4d78-cf62-424d-b318-9a6ba5774526/thumbnails/xxlarge.jpg" alt="Team collaborating on construction plans">
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-6" data-component-theme="portalThemeColor8"
- style="display: flex; flex-wrap: wrap; min-height: auto;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column;
- align-items: center; text-align: center; padding: 72px 48px;">
- <h2 style="font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: #fff; margin-bottom: 16px;">Ready to Enhance Your Project Delivery?</h2>
- <p style="color: rgba(255,255,255,0.85); max-width: 500px; line-height: 1.7; margin-bottom: 36px; padding: 8px 0;">Join Aecon Command Centre and gain full visibility into your university project readiness today.</p>
- <button class="button1" style="background: rgba(255,255,255,0.5); color: var(--brand); border: none; border-radius: 999px; padding: 14px 40px; font-weight: 700; font-size: 1rem; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">Get Started Now</button>
- </div>
- </div>
-</div>
-
-<div class="row sectionBlockLayout sec-7" data-component-theme="portalThemeColor7"
- style="display: flex; flex-wrap: wrap; min-height: auto;">
- <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
- <div class="col-md-12 columnBlockLayout"
- style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
- <div style="text-align: center; margin-bottom: 48px;">
- <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Our Team</span>
- <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">Meet the Command Centre Leaders</h2>
- <p style="color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto; line-height: 1.7;">Dedicated professionals driving delivery readiness and project success.</p>
- </div>
- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px; text-align: center;">
- <img style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/27b54665-a093-40d0-adde-632d21d89050/thumbnails/xxlarge.jpg" alt="Jessica Martin">
- <h3 style="font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">Jessica Martin</h3>
- <p style="color: #666; font-size: 0.85rem; margin-bottom: 12px;">Director of Delivery Readiness</p>
- <p style="color: #555; font-size: 0.88rem; line-height: 1.6; margin: 0;">Oversees command centre operations ensuring seamless project execution.</p>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px; text-align: center;">
- <img style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/5fc9b7fc-9a01-4f15-97be-32c334b9c8e9/thumbnails/xxlarge.jpg" alt="David Chen">
- <h3 style="font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">David Chen</h3>
- <p style="color: #666; font-size: 0.85rem; margin-bottom: 12px;">Lead Project Engineer</p>
- <p style="color: #555; font-size: 0.88rem; line-height: 1.6; margin: 0;">Coordinates technical readiness and resource planning across projects.</p>
- </div>
- <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px; text-align: center;">
- <img style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px;" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/de36f3ca-997f-4aad-a044-51caf6f03375/thumbnails/xxlarge.jpg" alt="Maria Lopez">
- <h3 style="font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">Maria Lopez</h3>
- <p style="color: #666; font-size: 0.85rem; margin-bottom: 12px;">Risk and Compliance Specialist</p>
- <p style="color: #555; font-size: 0.88rem; line-height: 1.6; margin: 0;">Manages risk alerts and ensures compliance with delivery standards.</p>
- </div>
- </div>
- </div>
- </div>
+<div id="aecon-command-centre" class="acc-shell">
+  <header class="acc-hero">
+    <div class="acc-hero-grid"></div>
+    <div class="acc-hero-content">
+      <div class="acc-eyebrow"><span class="acc-live-dot"></span> Aecon University / P5 DELIVERY READINESS</div>
+      <h1>Delivery Readiness<br><span>Command Centre</span></h1>
+      <p>See what is ready, what is at risk, and who owns the next action before an offering reaches delivery.</p>
+      <div class="acc-hero-actions"><button class="acc-primary" data-action="focus-risk">Review highest risk <span>→</span></button><button class="acc-ghost" data-action="open-help">How this works <span>?</span></button></div>
+    </div>
+    <div class="acc-hero-orbit" aria-hidden="true"><div class="acc-orbit-ring acc-ring-one"></div><div class="acc-orbit-ring acc-ring-two"></div><div class="acc-orbit-core"><strong>78%</strong><small>readiness pulse</small></div><span class="acc-orbit-node node-one">✓</span><span class="acc-orbit-node node-two">!</span><span class="acc-orbit-node node-three">↗</span></div>
+  </header>
+  <section class="acc-main" aria-label="Readiness dashboard">
+    <div class="acc-topline"><div><span class="acc-kicker">OPERATING VIEW</span><h2>Today’s readiness picture</h2></div><div class="acc-refresh">Last refreshed <strong>just now</strong><button aria-label="Refresh dashboard" data-action="refresh">↻</button></div></div>
+    <div class="acc-stat-grid">
+      <button class="acc-stat is-selected" data-filter="all"><span class="acc-stat-icon blue">◫</span><span class="acc-stat-value">12</span><span class="acc-stat-label">Upcoming offerings</span><span class="acc-stat-link">View all →</span></button>
+      <button class="acc-stat" data-filter="ready"><span class="acc-stat-icon green">✓</span><span class="acc-stat-value">8</span><span class="acc-stat-label">Ready</span><span class="acc-stat-link">Healthy flow →</span></button>
+      <button class="acc-stat" data-filter="risk"><span class="acc-stat-icon amber">!</span><span class="acc-stat-value">3</span><span class="acc-stat-label">At risk</span><span class="acc-stat-link">Needs attention →</span></button>
+      <button class="acc-stat" data-filter="blocked"><span class="acc-stat-icon red">×</span><span class="acc-stat-value">1</span><span class="acc-stat-label">Blocked</span><span class="acc-stat-link">Open blocker →</span></button>
+      <button class="acc-stat" data-filter="overdue"><span class="acc-stat-icon violet">◷</span><span class="acc-stat-value">7</span><span class="acc-stat-label">Overdue tasks</span><span class="acc-stat-link">View tasks →</span></button>
+    </div>
+    <div class="acc-dashboard-grid">
+      <section class="acc-panel acc-attention-panel"><div class="acc-panel-head"><div><span class="acc-kicker">SIGNAL</span><h3>Needs attention</h3></div><span class="acc-badge badge-amber">3 signals</span></div><div class="acc-signal-list">
+        <button class="acc-signal" data-offering="OFF-2026-014"><span class="signal-mark red">!</span><span><strong>Supervisor Safety Fundamentals</strong><small>Teams invitation not confirmed · due today</small></span><span>→</span></button>
+        <button class="acc-signal" data-offering="OFF-2026-009"><span class="signal-mark amber">◷</span><span><strong>Project Controls Essentials</strong><small>Materials owner has an overdue task</small></span><span>→</span></button>
+        <button class="acc-signal" data-offering="OFF-2026-012"><span class="signal-mark blue">↗</span><span><strong>Leading in the Field</strong><small>Delivery is within seven days</small></span><span>→</span></button>
+      </div></section>
+      <section class="acc-panel acc-breakdown-panel"><div class="acc-panel-head"><div><span class="acc-kicker">READINESS PULSE</span><h3>Where work is moving</h3></div><span class="acc-muted">12 offerings</span></div><div class="acc-breakdown"><div class="acc-donut"><div><strong>78%</strong><small>overall</small></div></div><div class="acc-bars"><div class="acc-bar-row"><span>Facilitator</span><div><i style="width:100%"></i></div><b>100%</b></div><div class="acc-bar-row"><span>Materials</span><div><i style="width:91%"></i></div><b>91%</b></div><div class="acc-bar-row"><span>Technology</span><div><i class="amber" style="width:73%"></i></div><b>73%</b></div><div class="acc-bar-row"><span>Attendance</span><div><i class="red" style="width:64%"></i></div><b>64%</b></div></div></div><p class="acc-note"><span>i</span> Readiness summarizes available evidence. Final delivery approval remains a human decision.</p></section>
+    </div>
+    <section class="acc-offerings-section"><div class="acc-topline acc-offering-head"><div><span class="acc-kicker">UPCOMING OFFERINGS</span><h2>What needs to move next</h2></div><div class="acc-view-controls"><div class="acc-search"><span>⌕</span><input id="acc-search" type="search" placeholder="Search offerings" aria-label="Search offerings"></div><button class="acc-view-btn is-active" data-view="cards">▦</button><button class="acc-view-btn" data-view="list">☷</button></div></div><div class="acc-filter-row"><button class="acc-filter is-active" data-filter="all">All <b>12</b></button><button class="acc-filter" data-filter="ready">Ready <b>8</b></button><button class="acc-filter" data-filter="risk">At risk <b>3</b></button><button class="acc-filter" data-filter="blocked">Blocked <b>1</b></button><button class="acc-filter" data-filter="soon">Next 7 days <b>2</b></button></div><div id="acc-offering-grid" class="acc-offering-grid"></div></section>
+    <section class="acc-lower-grid"><div class="acc-panel acc-kanban-preview"><div class="acc-panel-head"><div><span class="acc-kicker">WORK QUEUE</span><h3>Task flow</h3></div><button class="acc-text-btn" data-action="open-kanban">Open board →</button></div><div class="acc-mini-kanban"><div><span>IN PROGRESS</span><strong>9</strong><i class="mini-progress blue"></i></div><div><span>AT RISK</span><strong>4</strong><i class="mini-progress amber"></i></div><div><span>BLOCKED</span><strong>1</strong><i class="mini-progress red"></i></div><div><span>COMPLETE</span><strong>42</strong><i class="mini-progress green"></i></div></div></div><div class="acc-panel acc-human-panel"><span class="acc-kicker">CONTROL POINT</span><h3>Human decision, visible evidence</h3><p>The dashboard helps a reviewer see the facts, exceptions, and ownership. It does not silently approve delivery.</p><button class="acc-secondary" data-action="open-review">Open readiness review <span>→</span></button></div></section>
+  </section>
+  <div id="acc-drawer" class="acc-drawer" aria-hidden="true"><div class="acc-drawer-backdrop" data-action="close-drawer"></div><aside class="acc-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="acc-drawer-title"><button class="acc-close" data-action="close-drawer" aria-label="Close details">×</button><div id="acc-drawer-content"></div></aside></div>
+  <div id="acc-toast" class="acc-toast" role="status"></div>
 </div>
